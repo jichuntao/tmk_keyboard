@@ -83,3 +83,8 @@ void backlight_level(uint8_t level)
     eeconfig_write_backlight(backlight_config.raw);
     backlight_set(backlight_config.level);
 }
+
+void backlight_action(void)
+{
+    //dprintf("backlight action (tmk_core/common/backlight.c)\n");
+}
